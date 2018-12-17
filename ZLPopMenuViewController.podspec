@@ -39,10 +39,7 @@ Pod::Spec.new do |s|
 
   s.source   = { :git => "https://github.com/HanksHu/ZLPopMenuViewController.git", :tag => "#{s.version}" }
 
-  s.source_files  = "ZLPopMenuViewController/*.swift"
-
-
-
+  s.source_files  = "Code/*.swift"
 
 
   # s.resource  = "icon.png"

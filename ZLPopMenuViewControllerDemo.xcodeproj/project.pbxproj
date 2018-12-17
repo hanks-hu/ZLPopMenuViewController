@@ -15,7 +15,7 @@
 		9E67CCE521C7FBD3008985D2 /* ZLPopMenuViewControllerDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CCE421C7FBD3008985D2 /* ZLPopMenuViewControllerDemoTests.swift */; };
 		9E67CCF021C7FBD3008985D2 /* ZLPopMenuViewControllerDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CCEF21C7FBD3008985D2 /* ZLPopMenuViewControllerDemoUITests.swift */; };
 		9E67CD0421C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */; };
-		9E67CD0521C7FC0B008985D2 /*  ZLPopMenuConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CCFF21C7FC0B008985D2 /*  ZLPopMenuConfig.swift */; };
+		9E67CD0521C7FC0B008985D2 /* ZLPopMenuConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CCFF21C7FC0B008985D2 /* ZLPopMenuConfig.swift */; };
 		9E67CD0621C7FC0B008985D2 /* ZlTriangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0021C7FC0B008985D2 /* ZlTriangleView.swift */; };
 		9E67CD0721C7FC0B008985D2 /* ZLPopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */; };
 		9E67CD0821C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */; };
@@ -55,7 +55,7 @@
 		9E67CCEF21C7FBD3008985D2 /* ZLPopMenuViewControllerDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZLPopMenuViewControllerDemoUITests.swift; sourceTree = "<group>"; };
 		9E67CCF121C7FBD3008985D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuPresentAnimationController.swift; sourceTree = "<group>"; };
-		9E67CCFF21C7FC0B008985D2 /*  ZLPopMenuConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = " ZLPopMenuConfig.swift"; sourceTree = "<group>"; };
+		9E67CCFF21C7FC0B008985D2 /* ZLPopMenuConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuConfig.swift; sourceTree = "<group>"; };
 		9E67CD0021C7FC0B008985D2 /* ZlTriangleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZlTriangleView.swift; sourceTree = "<group>"; };
 		9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuViewController.swift; sourceTree = "<group>"; };
 		9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuTableViewCell.swift; sourceTree = "<group>"; };
@@ -145,7 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */,
-				9E67CCFF21C7FC0B008985D2 /*  ZLPopMenuConfig.swift */,
+				9E67CCFF21C7FC0B008985D2 /* ZLPopMenuConfig.swift */,
 				9E67CD0021C7FC0B008985D2 /* ZlTriangleView.swift */,
 				9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */,
 				9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */,
@@ -288,7 +288,7 @@
 			files = (
 				9E67CD0821C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift in Sources */,
 				9E67CD0421C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift in Sources */,
-				9E67CD0521C7FC0B008985D2 /*  ZLPopMenuConfig.swift in Sources */,
+				9E67CD0521C7FC0B008985D2 /* ZLPopMenuConfig.swift in Sources */,
 				9E67CD0621C7FC0B008985D2 /* ZlTriangleView.swift in Sources */,
 				9E67CCD221C7FBD1008985D2 /* ViewController.swift in Sources */,
 				9E67CCD021C7FBD1008985D2 /* AppDelegate.swift in Sources */,
