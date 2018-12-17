@@ -20,6 +20,7 @@
 		9E67CD0721C7FC0B008985D2 /* ZLPopMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */; };
 		9E67CD0821C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */; };
 		9E67CD0921C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */; };
+		9E67CD0B21C7FCCE008985D2 /* ZLPopMenuViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9E67CD0A21C7FCCE008985D2 /* ZLPopMenuViewController.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuViewController.swift; sourceTree = "<group>"; };
 		9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuTableViewCell.swift; sourceTree = "<group>"; };
 		9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuDismissAnimationController.swift; sourceTree = "<group>"; };
+		9E67CD0A21C7FCCE008985D2 /* ZLPopMenuViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZLPopMenuViewController.podspec; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 				9E67CCD621C7FBD3008985D2 /* Assets.xcassets */,
 				9E67CCD821C7FBD3008985D2 /* LaunchScreen.storyboard */,
 				9E67CCDB21C7FBD3008985D2 /* Info.plist */,
+				9E67CD0A21C7FCCE008985D2 /* ZLPopMenuViewController.podspec */,
 			);
 			path = ZLPopMenuViewControllerDemo;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E67CD0B21C7FCCE008985D2 /* ZLPopMenuViewController.podspec in Resources */,
 				9E67CCDA21C7FBD3008985D2 /* LaunchScreen.storyboard in Resources */,
 				9E67CCD721C7FBD3008985D2 /* Assets.xcassets in Resources */,
 				9E67CCD521C7FBD1008985D2 /* Main.storyboard in Resources */,
