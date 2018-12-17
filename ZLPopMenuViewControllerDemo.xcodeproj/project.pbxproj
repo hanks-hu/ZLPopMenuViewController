@@ -111,7 +111,7 @@
 		9E67CCCE21C7FBD1008985D2 /* ZLPopMenuViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9E67CCFD21C7FC0B008985D2 /* ZLPopMenuViewController */,
+				9E67CCFD21C7FC0B008985D2 /* Code */,
 				9E67CCCF21C7FBD1008985D2 /* AppDelegate.swift */,
 				9E67CCD121C7FBD1008985D2 /* ViewController.swift */,
 				9E67CCD321C7FBD1008985D2 /* Main.storyboard */,
@@ -141,7 +141,7 @@
 			path = ZLPopMenuViewControllerDemoUITests;
 			sourceTree = "<group>";
 		};
-		9E67CCFD21C7FC0B008985D2 /* ZLPopMenuViewController */ = {
+		9E67CCFD21C7FC0B008985D2 /* Code */ = {
 			isa = PBXGroup;
 			children = (
 				9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */,
@@ -151,7 +151,7 @@
 				9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */,
 				9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */,
 			);
-			path = ZLPopMenuViewController;
+			path = Code;
 			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */

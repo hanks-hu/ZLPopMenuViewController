@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
 
   s.description  = <<-DESC
-一个自定义弹出框
+                          一个自定义弹出框
                    DESC
 
   s.homepage     = "https://github.com/HanksHu/ZLPopMenuViewController"
