@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-struct ZLPopMenuModel: Codable, Equatable {
+public struct ZLPopMenuModel: Codable, Equatable {
     var itemName: String?
     var imageName: String?
     
@@ -19,7 +19,7 @@ struct ZLPopMenuModel: Codable, Equatable {
 }
 
 ///把一些配置放到这里
-struct ZLPopMenuConfig {
+public struct ZLPopMenuConfig {
     /// 距离两边最小距离
     let margin: CGFloat = 8
     /// 三角形的高

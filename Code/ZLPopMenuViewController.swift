@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZLPopMenuViewController: UIViewController {
+public class ZLPopMenuViewController: UIViewController {
    
     public var menuData = [ZLPopMenuModel]() {
         didSet {

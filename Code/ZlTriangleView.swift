@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ZlTriangleView: UIView {
+public class ZlTriangleView: UIView {
     ///箭头的朝向
     enum Direction: Int {
         ///箭头向上
