@@ -16,6 +16,7 @@ final public class ZLPopMenuDismissAnimationController: NSObject, UIViewControll
     /// Initializer with source view's frame.
     init(sourceFrame: CGRect?) {
         self.sourceFrame = sourceFrame
+        super.init()
     }
     
     /// Duration of the transition.

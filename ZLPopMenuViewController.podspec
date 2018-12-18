@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "ZLPopMenuViewController"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "一个自定义弹出框"
 
 

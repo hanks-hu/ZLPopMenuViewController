@@ -102,17 +102,24 @@ public class ZLPopMenuViewController: UIViewController {
         menuData.append(model)
         configContentView()
     }
-    public func deletModel(_ model: ZLPopMenuModel) {
-        
-        
+    public func updateModel(new model: ZLPopMenuModel, _ index: Int) {
+        if index >= menuData.count {
+            return
+        }
+        menuData[index] = model
+        tableView.reloadData()
     }
+//    public func deletModel(_ model: ZLPopMenuModel) {
+//
+//
+//    }
     
     // MARK: - public method
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    override func viewDidLoad() {
+    override public func viewDidLoad() {
         
         view.backgroundColor = UIColor.clear
         view.addSubview(backgroundView)
@@ -165,7 +172,7 @@ public class ZLPopMenuViewController: UIViewController {
 //        super.touchesEnded(touches, with: event)
 //        dismiss(animated: true, completion: nil)
 //    }
-    override var preferredStatusBarStyle: UIStatusBarStyle {
+    override public var preferredStatusBarStyle: UIStatusBarStyle {
         
         return .default
     }
@@ -196,23 +203,22 @@ extension ZLPopMenuViewController: UIViewControllerTransitioningDelegate {
 
 extension ZLPopMenuViewController: UITableViewDataSource, UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         didClickItems?(indexPath.row, menuData[indexPath.row])
         willDismiss?()
         dismiss(animated: true) {[unowned self]() in
             self.didDismiss?()
         }
-        
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return menuData.count
     }
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return menuCf.cellH
     }
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ZLPopMenuTableViewCell", for: indexPath) as! ZLPopMenuTableViewCell
         
         cell.cellModel = menuData[indexPath.row]

@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 public struct ZLPopMenuModel: Codable, Equatable {
-    var itemName: String?
-    var imageName: String?
+    public var itemName: String?
+    public var imageName: String?
     
     public static func == (lhs: ZLPopMenuModel, rhs: ZLPopMenuModel) -> Bool {
         
@@ -21,22 +21,22 @@ public struct ZLPopMenuModel: Codable, Equatable {
 ///把一些配置放到这里
 public struct ZLPopMenuConfig {
     /// 距离两边最小距离
-    let margin: CGFloat = 8
+    public let margin: CGFloat = 8
     /// 三角形的高
-    let triangleH: CGFloat = 10.0
+    public let triangleH: CGFloat = 10.0
     /// 三角形的宽
-    let triangleW: CGFloat = 10.0*2.0/sqrt(3.0)
-    /// 圆角半径
-    let radius: CGFloat = 5
-    ///菜单项最大值
-    let defaultMaxValue = 6
+    public let triangleW: CGFloat = 10.0*2.0/sqrt(3.0)
+    /// 圆角半径, 四个角的圆角
+    public let radius: CGFloat = 5
+    ///菜单项最大值，超过这个值，就可以上下滑动
+    public let defaultMaxValue = 6
     ///tableview的宽
-    let tableViewW: CGFloat = 120
+    public let tableViewW: CGFloat = 120
     ///tableViewcell的 高
-    let cellH: CGFloat = 40.0
+    public let cellH: CGFloat = 40.0
     
     ///默认值
-    static let `default` = ZLPopMenuConfig()
+    public static let `default` = ZLPopMenuConfig()
 
     
     

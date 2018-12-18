@@ -144,12 +144,12 @@
 		9E67CCFD21C7FC0B008985D2 /* Code */ = {
 			isa = PBXGroup;
 			children = (
-				9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */,
+				9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */,
 				9E67CCFF21C7FC0B008985D2 /* ZLPopMenuConfig.swift */,
 				9E67CD0021C7FC0B008985D2 /* ZlTriangleView.swift */,
-				9E67CD0121C7FC0B008985D2 /* ZLPopMenuViewController.swift */,
 				9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */,
 				9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */,
+				9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */,
 			);
 			path = Code;
 			sourceTree = SOURCE_ROOT;

@@ -10,8 +10,6 @@ import UIKit
 
 public class ZLPopMenuTableViewCell: UITableViewCell {
     
-    
-    
     public var cellModel: ZLPopMenuModel? {
         didSet {
            textLabel?.text = cellModel?.itemName

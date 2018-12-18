@@ -18,7 +18,7 @@ public class ZlTriangleView: UIView {
     }
     var direction = Direction.down
     
-    override func draw(_ rect: CGRect) {
+    override public func draw(_ rect: CGRect) {
         
         let bezierPath = UIBezierPath.init()
         bezierPath.move(to: .init(x: 0, y: rect.height))

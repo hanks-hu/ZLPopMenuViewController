@@ -16,6 +16,8 @@ final public class ZLPopMenuPresentAnimationController: NSObject, UIViewControll
     /// Initializer with source view's frame.
     init(sourceFrame: CGRect?) {
         self.sourceFrame = sourceFrame
+        super.init()
+        
     }
     
     
