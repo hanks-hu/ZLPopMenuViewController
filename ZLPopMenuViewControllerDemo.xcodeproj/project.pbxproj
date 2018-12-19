@@ -115,6 +115,7 @@
 		9EE65A1021C939AE00B4BDDD /* ZLPopMenuViewControllerDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZLPopMenuViewControllerDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EE65A1121C939AE00B4BDDD /* ViewController11.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController11.h; sourceTree = "<group>"; };
 		9EE65A1221C939AE00B4BDDD /* ViewController11.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController11.m; sourceTree = "<group>"; };
+		9EE65A1521C9D5FA00B4BDDD /* Script.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = Script.sh; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +162,8 @@
 		9E67CCC321C7FBD1008985D2 = {
 			isa = PBXGroup;
 			children = (
+				9EE65A1521C9D5FA00B4BDDD /* Script.sh */,
+				9E67CCFD21C7FC0B008985D2 /* Code */,
 				9E67CCCE21C7FBD1008985D2 /* ZLPopMenuViewControllerDemo */,
 				9E67CCE321C7FBD3008985D2 /* ZLPopMenuViewControllerDemoTests */,
 				9E67CCEE21C7FBD3008985D2 /* ZLPopMenuViewControllerDemoUITests */,
@@ -185,7 +188,6 @@
 		9E67CCCE21C7FBD1008985D2 /* ZLPopMenuViewControllerDemo */ = {
 			isa = PBXGroup;
 			children = (
-				9E67CCFD21C7FC0B008985D2 /* Code */,
 				9E67CCCF21C7FBD1008985D2 /* AppDelegate.swift */,
 				9E67CCD121C7FBD1008985D2 /* ViewController.swift */,
 				9EE65A1121C939AE00B4BDDD /* ViewController11.h */,
@@ -228,8 +230,7 @@
 				9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */,
 				9E67CCFE21C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift */,
 			);
-			name = Code;
-			path = ZLPopMenuViewControllerDemo/Code;
+			path = Code;
 			sourceTree = SOURCE_ROOT;
 		};
 		9EE659EB21C930E400B4BDDD /* ZLPopMenuViewController */ = {

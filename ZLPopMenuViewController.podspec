@@ -1,21 +1,15 @@
 
 Pod::Spec.new do |s|
 
-
   s.name         = "ZLPopMenuViewController"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "一个自定义弹出框"
-
 
   s.description  = <<-DESC
                           一个自定义弹出框
                    DESC
-
   s.homepage     = "https://github.com/HanksHu/ZLPopMenuViewController"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-
 
   s.license      = "MIT"
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
@@ -46,17 +40,11 @@ Pod::Spec.new do |s|
   # s.resources = "Resources/*.png"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
-
    s.framework  = "UIKit"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-
    s.requires_arc = true
    s.swift_version = "4.2"
-
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
