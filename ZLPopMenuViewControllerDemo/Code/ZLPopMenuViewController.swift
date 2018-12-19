@@ -10,7 +10,7 @@ import UIKit
 
 public class ZLPopMenuViewController: UIViewController {
    
-    public var menuData = [ZLPopMenuModel]() {
+    @objc public var menuData = [ZLPopMenuModel]() {
         didSet {
             if menuData == oldValue {
                 return
@@ -20,13 +20,13 @@ public class ZLPopMenuViewController: UIViewController {
     }
      // MARK: - 一些回调通知
     ///点击item的回调
-    public var didClickItems: ((Int, ZLPopMenuModel) -> Void)?
+    @objc public var didClickItems: ((Int, ZLPopMenuModel) -> Void)?
     ///
-    public var didTapBackgroundView: (() -> Void)?
+    @objc public var didTapBackgroundView: (() -> Void)?
     ///
-    public var didDismiss: (() -> Void)?
+    @objc public var didDismiss: (() -> Void)?
     ///
-    public var willDismiss: (() -> Void)?
+    @objc public var willDismiss: (() -> Void)?
     
     private lazy var tableView: UITableView = {
         let table = UITableView.init()
@@ -42,7 +42,7 @@ public class ZLPopMenuViewController: UIViewController {
     private let triangleView = ZlTriangleView()
     
     ///大的背景view
-    lazy var backgroundView: UIView = {
+    public lazy var backgroundView: UIView = {
         let bkView = UIView()
         bkView.frame = view.frame
         bkView.backgroundColor = UIColor.black.withAlphaComponent(0.3)
@@ -59,7 +59,7 @@ public class ZLPopMenuViewController: UIViewController {
         return tapper
     }()
     //放箭头和tabelview的
-    lazy var contentView: UIView = {
+    public lazy var contentView: UIView = {
         let cview = UIView()
         cview.backgroundColor = .clear
         cview.layer.cornerRadius = 5
@@ -70,7 +70,6 @@ public class ZLPopMenuViewController: UIViewController {
     private var absoluteSourceFrame = CGRect.zero
     
     deinit {
-        
         print(type(of: self), #function)
     }
     
@@ -78,7 +77,14 @@ public class ZLPopMenuViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
     // MARK: - public method
-    public convenience init(sourceView: AnyObject,
+    
+    /// 初始化
+    ///
+    /// - Parameters:
+    ///   - sourceView: sourceView
+    ///   - menuData: 数据
+    ///   - popMenuConfig: 配置
+    @objc public convenience init(sourceView: AnyObject,
                             menuData: [ZLPopMenuModel] = [],
                             popMenuConfig: ZLPopMenuConfig = .default) {
         self.init()
@@ -98,11 +104,21 @@ public class ZLPopMenuViewController: UIViewController {
         }
         
     }
-    public func appendModel(new model: ZLPopMenuModel) {
+    
+    /// 新增一个
+    ///
+    /// - Parameter model: 新数据
+    @objc public func appendModel(new model: ZLPopMenuModel) {
         menuData.append(model)
         configContentView()
     }
-    public func updateModel(new model: ZLPopMenuModel, _ index: Int) {
+    
+    /// 更新数据
+    ///
+    /// - Parameters:
+    ///   - model: 新的数据
+    ///   - index: 索引
+    @objc public func updateModel(new model: ZLPopMenuModel, _ index: Int) {
         if index >= menuData.count {
             return
         }
@@ -129,7 +145,7 @@ public class ZLPopMenuViewController: UIViewController {
         configContentView()
     }
     ///每次更新数据和远点都要重新计算
-    func configContentView() {
+    private func configContentView() {
         triangleView.backgroundColor = UIColor.white
         
         let tableViewH = CGFloat(min(menuCf.defaultMaxValue, menuData.count)) * menuCf.cellH
@@ -203,7 +219,7 @@ extension ZLPopMenuViewController: UIViewControllerTransitioningDelegate {
 
 extension ZLPopMenuViewController: UITableViewDataSource, UITableViewDelegate {
     
-    private func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         didClickItems?(indexPath.row, menuData[indexPath.row])
         willDismiss?()
@@ -215,7 +231,8 @@ extension ZLPopMenuViewController: UITableViewDataSource, UITableViewDelegate {
         
         return menuData.count
     }
-    private func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
         return menuCf.cellH
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -226,5 +243,3 @@ extension ZLPopMenuViewController: UITableViewDataSource, UITableViewDelegate {
     }
     
 }
-
-

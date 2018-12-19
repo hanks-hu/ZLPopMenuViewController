@@ -7,14 +7,25 @@
 //
 
 import UIKit
-
+import ZLPopMenuViewController
 class ViewController: UIViewController {
-
+    let datas: [ZLPopMenuModel] = [.init(itemName: "首页", imageName: nil),
+                                   .init(itemName: "首页", imageName: "Heart"),
+                                   .init(itemName: "首页", imageName: nil)]
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
-
+    @IBAction func test1Action(_ sender: UIBarButtonItem) {
+        let popVC = ZLPopMenuViewController.init(sourceView: sender, menuData: datas)
+        present(popVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func test1VCAction(_ sender: UIButton) {
+        let vc1 = ViewController11.init()
+        navigationController?.pushViewController(vc1, animated: true)
+    }
+    
+    
 }
-

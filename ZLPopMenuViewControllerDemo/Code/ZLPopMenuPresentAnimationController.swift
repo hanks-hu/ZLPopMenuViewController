@@ -55,14 +55,10 @@ final public class ZLPopMenuPresentAnimationController: NSObject, UIViewControll
         viewController.contentView.transform = CGAffineTransform.init(scaleX: 0.01, y: 0.01)
         
     }
-    
     /// Run the animation.
     fileprivate func animate(_ viewController: ZLPopMenuViewController) {
         viewController.contentView.alpha = 1
         viewController.backgroundView.alpha = 1
         viewController.contentView.transform = CGAffineTransform.init(scaleX: 1, y: 1)
-        
-        
     }
-    
 }
