@@ -28,7 +28,9 @@
         ZLPopMenuModel *model = [[ZLPopMenuModel alloc]initWithItemName:@"菜单" imageName:nil];
         
         ZLPopMenuViewController *popVC = [[ZLPopMenuViewController alloc] initWithSourceView:testView
-                                                                                    menuData:@[model, model, model] menuStyle:ZLPopMenuStyleWhite popMenuConfig:[ZLPopMenuConfig default]];
+                                                                                    menuData:@[model, model, model]
+                                                                                   menuStyle:ZLPopMenuStyleWhite
+                                                                               popMenuConfig:[ZLPopMenuConfig default]];
         [self presentViewController:popVC animated:true completion:nil];
         
         [popVC setDidClickItems:^(NSInteger indx, ZLPopMenuModel * _Nonnull model) {
