@@ -66,6 +66,7 @@ public class ZLPopMenuViewController: UIViewController {
         cview.layer.masksToBounds = true
         return cview
     }()
+    private var menuStyle = ZLPopMenuStyle.white
     private var menuCf = ZLPopMenuConfig.default
     private var absoluteSourceFrame = CGRect.zero
     
@@ -86,8 +87,10 @@ public class ZLPopMenuViewController: UIViewController {
     ///   - popMenuConfig: 配置
     @objc public convenience init(sourceView: AnyObject,
                             menuData: [ZLPopMenuModel] = [],
+                            menuStyle: ZLPopMenuStyle = .white,
                             popMenuConfig: ZLPopMenuConfig = .default) {
         self.init()
+        self.menuStyle = menuStyle
         self.menuData = menuData
         menuCf = popMenuConfig
         modalPresentationStyle = .overFullScreen
@@ -146,7 +149,13 @@ public class ZLPopMenuViewController: UIViewController {
     }
     ///每次更新数据和远点都要重新计算
     private func configContentView() {
-        triangleView.backgroundColor = UIColor.white
+        switch menuStyle {
+        case .white:
+            triangleView.backgroundColor = .white
+        case .black:
+            triangleView.backgroundColor = .black
+        }
+        
         
         let tableViewH = CGFloat(min(menuCf.defaultMaxValue, menuData.count)) * menuCf.cellH
         
@@ -239,6 +248,16 @@ extension ZLPopMenuViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ZLPopMenuTableViewCell", for: indexPath) as! ZLPopMenuTableViewCell
         
         cell.cellModel = menuData[indexPath.row]
+        switch menuStyle {
+        case .black:
+            cell.backgroundColor = .black
+            cell.textLabel?.textColor = .white
+//            cell.selectionStyle = .gray
+        case .white:
+            cell.backgroundColor = .white
+            cell.textLabel?.textColor = .black
+//            cell.selectionStyle = .default
+        }
         return cell
     }
     

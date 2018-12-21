@@ -9,6 +9,12 @@
 import Foundation
 import UIKit
 
+@objc public enum ZLPopMenuStyle: Int {
+    ///白色主题 默认的
+    case white
+    ///黑色主题
+    case black
+}
 public class ZLPopMenuModel: NSObject, Codable {
     @objc public var itemName: String?
     @objc public var imageName: String?

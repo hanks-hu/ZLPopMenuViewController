@@ -2,11 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "ZLPopMenuViewController"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "一个自定义弹出框"
 
   s.description  = <<-DESC
-                          一个自定义弹出框
+                          一个自定义弹出 框
                    DESC
   s.homepage     = "https://github.com/HanksHu/ZLPopMenuViewController"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"

@@ -24,12 +24,17 @@
     [self.view addSubview:testView];
     self.view.backgroundColor = [UIColor yellowColor];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
         ZLPopMenuModel *model = [[ZLPopMenuModel alloc]initWithItemName:@"菜单" imageName:nil];
-        ZLPopMenuViewController *popVC = [[ZLPopMenuViewController alloc]initWithSourceView:testView menuData:@[model, model, model] popMenuConfig:[ZLPopMenuConfig default]];
+        
+        ZLPopMenuViewController *popVC = [[ZLPopMenuViewController alloc] initWithSourceView:testView
+                                                                                    menuData:@[model, model, model] menuStyle:ZLPopMenuStyleWhite popMenuConfig:[ZLPopMenuConfig default]];
         [self presentViewController:popVC animated:true completion:nil];
+        
         [popVC setDidClickItems:^(NSInteger indx, ZLPopMenuModel * _Nonnull model) {
             NSLog(@"OC中点击了 %ld, %@", indx, model);
         }];
+        
         
         
     });

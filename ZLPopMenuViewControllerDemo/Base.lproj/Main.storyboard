@@ -32,11 +32,19 @@
                     </view>
                     <navigationItem key="navigationItem" id="kuV-ce-1GW">
                         <leftBarButtonItems>
-                            <barButtonItem systemItem="play" id="jQW-eO-2nX"/>
-                            <barButtonItem title="Item" id="jDy-fu-yic"/>
-                            <barButtonItem title="Item" id="ZY5-Ja-X6J"/>
-                            <barButtonItem title="Item" id="MWV-rw-uAA"/>
-                            <barButtonItem title="Item" id="9tk-EX-7gW"/>
+                            <barButtonItem systemItem="play" id="jQW-eO-2nX">
+                                <connections>
+                                    <action selector="playAction:" destination="BYZ-38-t0r" id="b3x-sK-7HR"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Item1" id="jDy-fu-yic"/>
+                            <barButtonItem title="Item2" id="ZY5-Ja-X6J"/>
+                            <barButtonItem title="Item3" id="MWV-rw-uAA"/>
+                            <barButtonItem title="Item4" id="9tk-EX-7gW">
+                                <connections>
+                                    <action selector="item4Action:" destination="BYZ-38-t0r" id="vNM-c5-pHE"/>
+                                </connections>
+                            </barButtonItem>
                         </leftBarButtonItems>
                         <rightBarButtonItems>
                             <barButtonItem title="测试1" id="GST-0j-2sI">

@@ -21,6 +21,7 @@
 		9E67CD0821C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */; };
 		9E67CD0921C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */; };
 		9E67CD0B21C7FCCE008985D2 /* ZLPopMenuViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 9E67CD0A21C7FCCE008985D2 /* ZLPopMenuViewController.podspec */; };
+		9E85794B21CD3DEC00A101E0 /* UIImage+Category..swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E85794A21CD3DEC00A101E0 /* UIImage+Category..swift */; };
 		9EE659F321C930E500B4BDDD /* ZLPopMenuViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE659EA21C930E400B4BDDD /* ZLPopMenuViewController.framework */; };
 		9EE659FA21C930E500B4BDDD /* ZLPopMenuViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EE659F921C930E500B4BDDD /* ZLPopMenuViewControllerTests.swift */; };
 		9EE659FF21C930E500B4BDDD /* ZLPopMenuViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EE659EA21C930E400B4BDDD /* ZLPopMenuViewController.framework */; };
@@ -107,6 +108,7 @@
 		9E67CD0221C7FC0B008985D2 /* ZLPopMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuTableViewCell.swift; sourceTree = "<group>"; };
 		9E67CD0321C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZLPopMenuDismissAnimationController.swift; sourceTree = "<group>"; };
 		9E67CD0A21C7FCCE008985D2 /* ZLPopMenuViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ZLPopMenuViewController.podspec; sourceTree = SOURCE_ROOT; };
+		9E85794A21CD3DEC00A101E0 /* UIImage+Category..swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Category..swift"; sourceTree = "<group>"; };
 		9EE659EA21C930E400B4BDDD /* ZLPopMenuViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZLPopMenuViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE659ED21C930E400B4BDDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EE659F221C930E500B4BDDD /* ZLPopMenuViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZLPopMenuViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				9E67CCCF21C7FBD1008985D2 /* AppDelegate.swift */,
+				9E85794A21CD3DEC00A101E0 /* UIImage+Category..swift */,
 				9E67CCD121C7FBD1008985D2 /* ViewController.swift */,
 				9EE65A1121C939AE00B4BDDD /* ViewController11.h */,
 				9EE65A1221C939AE00B4BDDD /* ViewController11.m */,
@@ -527,6 +530,7 @@
 				9E67CD0421C7FC0B008985D2 /* ZLPopMenuPresentAnimationController.swift in Sources */,
 				9E67CD0521C7FC0B008985D2 /* ZLPopMenuConfig.swift in Sources */,
 				9E67CD0621C7FC0B008985D2 /* ZlTriangleView.swift in Sources */,
+				9E85794B21CD3DEC00A101E0 /* UIImage+Category..swift in Sources */,
 				9E67CCD221C7FBD1008985D2 /* ViewController.swift in Sources */,
 				9E67CCD021C7FBD1008985D2 /* AppDelegate.swift in Sources */,
 				9E67CD0921C7FC0B008985D2 /* ZLPopMenuDismissAnimationController.swift in Sources */,
