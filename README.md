@@ -1,10 +1,11 @@
 # ZLPopMenuViewController
-用UIViewController实现的自定义弹出框
-**效果图如下**
-![黑色主题](https://upload-images.jianshu.io/upload_images/1715760-4511469bcbb1ddec.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-![白色主题](https://upload-images.jianshu.io/upload_images/1715760-8f01049e9c34881a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-![白色主题](https://upload-images.jianshu.io/upload_images/1715760-ac2597035df7e0c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+用UIViewController实现的自定义弹出框
+
+**效果图如下**
+
+![效果图](https://upload-images.jianshu.io/upload_images/1715760-9739e5b89869aafa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
 # 安装
 1. 使用`cocoapods`  `Podfile`文件中添加`pod 'ZLPopMenuViewController'`
 2. 也可以直接把代码拖到工程中
