@@ -759,7 +759,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZLPopMenuViewControllerDemo/ZLPopMenuViewControllerDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -780,7 +780,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ZLPopMenuViewControllerDemo/ZLPopMenuViewControllerDemo-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -800,7 +800,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZLPopMenuViewControllerDemo.app/ZLPopMenuViewControllerDemo";
 			};
@@ -821,7 +821,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZLPopMenuViewControllerDemo.app/ZLPopMenuViewControllerDemo";
 			};
@@ -841,7 +841,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ZLPopMenuViewControllerDemo;
 			};
@@ -861,7 +861,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = ZLPopMenuViewControllerDemo;
 			};
@@ -889,7 +889,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -918,7 +918,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewController;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -939,7 +939,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZLPopMenuViewControllerDemo.app/ZLPopMenuViewControllerDemo";
 			};
@@ -959,7 +959,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jastsh.ZLPopMenuViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZLPopMenuViewControllerDemo.app/ZLPopMenuViewControllerDemo";
 			};
