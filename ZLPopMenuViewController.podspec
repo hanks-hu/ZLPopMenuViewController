@@ -44,7 +44,7 @@ Pod::Spec.new do |s|
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
    s.requires_arc = true
-   s.swift_version = "4.2"
+  #  s.swift_version = "4.2"
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
 
